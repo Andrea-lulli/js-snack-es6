@@ -15,7 +15,7 @@ const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 const min = 2;
 const max = 4;
 
-// console.log(myArray.slice(2, 5));
+ console.log(myArray.slice(2, 5));
 
 // const newArray = myArray.forEach((element) => {
     
