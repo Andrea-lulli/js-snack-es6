@@ -15,22 +15,28 @@ const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 const min = 2;
 const max = 4;
 
- console.log(myArray.slice(2, 5));
 
-// const newArray = myArray.forEach((element) => {
-    
-//     console.log(element);
-    
-// });
+//esercizio eseguito con forEach
+const newArray = []
 
-
-
-const array = myArray.filter((element , index) =>{
-
-   if (min == index || max == index) {
-    return true
+myArray.forEach((element, index) => {
+   if (index >= min && index <= max) {
+      newArray.push(element)
    }
-    
-})
-console.log(array);
 
+
+});
+console.log(newArray);
+
+
+//esercizio eseguito con filter
+const array = myArray.filter((element, index) => {
+
+   if (index >= min && index <= max) {
+      return true
+   }
+
+})
+
+
+console.log(array);
