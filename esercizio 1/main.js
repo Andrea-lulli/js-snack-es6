@@ -11,3 +11,26 @@ nuovo saranno i nomi compresi tra queste posizioni 2 e 4
 */
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+
+const min = 2;
+const max = 4;
+
+// console.log(myArray.slice(2, 5));
+
+// const newArray = myArray.forEach((element) => {
+    
+//     console.log(element);
+    
+// });
+
+
+
+const array = myArray.filter((element , index) =>{
+
+   if (min == index || max == index) {
+    return true
+   }
+    
+})
+console.log(array);
+
