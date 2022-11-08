@@ -45,8 +45,8 @@ console.log(bici);
 let pesoMin = bici.filter(({nome, peso})=> (peso < 5) )
 
 //stampa il risultato 
-pesoMin.forEach((element)=>{
-    stampa.innerHTML +=  ` <div>La bici più leggera è : Marca: ${element.nome} con peso: ${element.peso}</div> `
+pesoMin.forEach(({nome, peso})=>{
+    stampa.innerHTML +=  ` <div>La bici più leggera è : Marca: ${nome} con peso: ${peso}</div> `
 })
 
 
