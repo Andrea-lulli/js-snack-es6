@@ -31,14 +31,23 @@ const bici = [
 
 ]
 
-console.log(Math.min ( ...bici).peso);
+console.log(bici);
 
-const elenco = bici.filter( ( element ) =>{
-    if(Math.min(element)) {
-return true 
+
+
+const newArray = bici.forEach(({peso}) =>{
+    if (peso <= bici.peso) {
+       console.log("ok");
+        
     }
-    stampa.innerHTML += element
 })
+console.log(newArray);
+// const elenco = bici.filter( ( element ) =>{
+//     if(Math.min(element)) {
+// return true 
+//     }
+//     stampa.innerHTML += element
+// })
 
-console.log(elenco);
+// console.log(elenco);
 

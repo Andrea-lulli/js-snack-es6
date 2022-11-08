@@ -42,7 +42,7 @@ const squadre = [
     ]
 
 
-
+// creati punti e fallifatti random 
 squadre.forEach((element)=>{
     element.puntiFatti = Math.floor(Math.random()* 30)+1
     element.falliSubiti = Math.floor(Math.random()* 50)+1
@@ -51,6 +51,7 @@ squadre.forEach((element)=>{
 console.log(squadre);
 
 
+// creato array con foreach con solo fallisubiti e nome
 const nuovoArray = [];
 
 squadre.forEach(({nome, falliSubiti})=>{
@@ -59,12 +60,14 @@ squadre.forEach(({nome, falliSubiti})=>{
 
 console.log(nuovoArray);
 
-// let nuovoArray = squadre.filter (({nome, falliSubiti}) =>{
-//    const {nome, falliSubiti}
-//    return true 
-// })   
 
-// console.log(nuovoArray.nome);
+// creato array con map con solo fallisubiti e nome
+ let nuovoArray2 = squadre.map (({nome, falliSubiti}) =>{
+
+    return { nome, falliSubiti }
+ })   
+
+ console.log(nuovoArray2);
 
 
 
