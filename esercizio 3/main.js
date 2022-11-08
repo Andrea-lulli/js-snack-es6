@@ -33,6 +33,9 @@ const bici = [
 
 console.log(bici);
 
+const { nome } = bici[0];
+console.log(nome);
+
 // //trova peso min 
 // let pesoMin = bici.filter(({nome, peso})=>{
 //   if (peso < 5) {
