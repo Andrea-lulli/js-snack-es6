@@ -31,16 +31,23 @@ const bici = [
 
 ]
 
-console.log(bici[0].peso);
+console.log(bici);
 
+// //trova peso min 
+// let pesoMin = bici.filter(({nome, peso})=>{
+//   if (peso < 5) {
+//     console.log(nome, peso); 
+//     return (nome, peso)    
+//   } 
+// })
 
+//trova peso min con template literal
+let pesoMin = bici.filter(({nome, peso})=> (peso < 5) )
 
-const pesoMin = bici.filter( ( {peso} ) =>{
-    if (peso ==  Math.min(peso)) {
-        return {peso} 
-    }
-    
+//stampa il risultato 
+pesoMin.forEach((element)=>{
+    stampa.innerHTML +=  ` <div>La bici più leggera è : Marca: ${element.nome} con peso: ${element.peso}</div> `
 })
 
-console.log(pesoMin);
 
+console.log(pesoMin);
