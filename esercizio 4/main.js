@@ -64,10 +64,21 @@ console.log(nuovoArray);
 // creato array con map con solo fallisubiti e nome
  let nuovoArray2 = squadre.map (({nome, falliSubiti}) =>{
 
-    return { nome, falliSubiti }
+    return { nome, falliSubiti };
+
+    
  })   
 
  console.log(nuovoArray2);
+
+//stampa nomi e falli subiti 
+ nuovoArray2.forEach((element)=>{
+    let stampa = document.getElementById("stampa").innerHTML += `<li>Squadra: ${element.nome} Falli Subiti: ${element.falliSubiti}</li>`
+ })
+ 
+
+ 
+
 
 
 
