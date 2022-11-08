@@ -50,12 +50,21 @@ squadre.forEach((element)=>{
 
 console.log(squadre);
 
-let nuovoArray = squadre.filter (({nome, falliSubiti}) =>{
-   console.log({nome, falliSubiti}); 
-   return true 
-    
-    
 
-})   
+const nuovoArray = [];
+
+squadre.forEach(({nome, falliSubiti})=>{
+    nuovoArray.push({nome,falliSubiti})
+})
+
+console.log(nuovoArray);
+
+// let nuovoArray = squadre.filter (({nome, falliSubiti}) =>{
+//    const {nome, falliSubiti}
+//    return true 
+// })   
+
+// console.log(nuovoArray.nome);
+
 
 
