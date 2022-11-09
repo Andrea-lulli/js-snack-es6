@@ -33,19 +33,11 @@ const bici = [
 
 console.log(bici);
 
-const { nome } = bici[0];
-console.log(nome);
+const biciLeggera = bici[0];
 
-// //trova peso min 
-// let pesoMin = bici.filter(({nome, peso})=>{
-//   if (peso < 5) {
-//     console.log(nome, peso); 
-//     return (nome, peso)    
-//   } 
-// })
 
 //trova peso min con template literal
-let pesoMin = bici.filter(({nome, peso})=> (peso < 5) )
+let pesoMin = bici.filter(({nome, peso}) => (peso < biciLeggera.peso) )
 
 //stampa il risultato 
 pesoMin.forEach(({nome, peso})=>{
